@@ -1,0 +1,65 @@
+.product{
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 25%;
+
+    padding-top: 2rem;
+}
+
+.card__description {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #C4C4C4;
+    
+
+    &::before {
+        content: "Niche:";
+        color: $color_black;
+    }
+}
+
+.card__bottom {
+    display: flex;
+    align-items: center;
+    
+
+    &__price {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: $color_black;
+    
+    }
+
+    &__sale {
+        text-decoration: line-through;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: $color_lightgrey;
+        
+        margin-left: 0.3rem;
+    }
+}
+
+.card__bottom__stars {
+        display: flex;
+        
+        margin-left: 0.3rem;
+}
+
